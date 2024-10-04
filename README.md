@@ -1,12 +1,12 @@
 # Air-Quality Dashboard
 
-This project is a Streamlit-based air-quality dashboard that visualizes pollutant data (PM2.5, PM10, O3, NO3, SO2) and provides AQI forecasts for a given date range.
+This project is a Streamlit-based air-quality dashboard that visualizes pollutant data PM2.5 and provides AQI forecasts for a selected date range.
 
 ## Setup Environment
 
 ### Prerequisites
 
-1. **Python**: Ensure Python is installed on your machine. You can download it from [here](https://www.python.org/downloads/).
+1. **Python**: Ensure Python is installed on your machine. You can download it [here](https://www.python.org/downloads/).
 2. **VSCode**: Install Visual Studio Code for coding and development. Download it [here](https://code.visualstudio.com/).
 3. **Streamlit**: Install Streamlit via pip:
 
@@ -14,7 +14,7 @@ This project is a Streamlit-based air-quality dashboard that visualizes pollutan
     pip install streamlit
     ```
 
-4. **Other Dependencies**: You may need to install additional libraries used in the project. Install them using:
+4. **Other Dependencies**: Install additional libraries required for the project:
 
     ```bash
     pip install -r requirements.txt
@@ -24,43 +24,42 @@ This project is a Streamlit-based air-quality dashboard that visualizes pollutan
 
 To run the air-quality dashboard, follow these steps:
 
-1. Clone this repository:
+1. **Activate Virtual Environment** (optional but recommended):
+
+    - On **Windows**:
+    
+      ```bash
+      venv\Scripts\activate
+      ```
+
+    - On **macOS/Linux**:
+    
+      ```bash
+      source venv/bin/activate
+      ```
+
+2. **Navigate to the Dashboard Directory**:
 
     ```bash
-    git clone <your-repository-url>
-    cd <repository-folder>
+    cd dashboard
     ```
 
-2. In VSCode, open the terminal and activate your Python virtual environment (optional but recommended):
+3. **Run the Streamlit App**:
 
     ```bash
-    # On Windows
-    venv\Scripts\activate
-
-    # On macOS/Linux
-    source venv/bin/activate
+    streamlit run AQIDashboard.py
     ```
 
-3. Run the Streamlit app:
+4. **Access the Dashboard**:
 
-    ```bash
-    python -m run streamlit AQIDashboard.py
-    ```
-
-4. Open your browser and navigate to:
+    Open your browser and go to:
 
     ```
     http://localhost:8501
     ```
 
-This will launch the dashboard locally.
-
 ### Features
 
-- Select a date range and station to view average pollutant data
-- Visualize pollutant concentration charts with a title 'Pollutant and Concentration.'
-- Get AQI category forecasts, temperature, and pressure data.
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Date Range Selection**: Choose a date range and station to view average pollutant data.
+- **Pollutant Visualization**: Displays pollutant concentration charts with the title 'Pollutant and Concentration.'
+- **AQI Forecast**: Provides AQI category forecasts along with temperature and pressure data.
